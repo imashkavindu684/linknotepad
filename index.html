@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)file:///C:/Users/Vikash/Desktop/notepad.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Amarasri Herath Notepad</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 30px;
+    background: #0f172a;
+    overflow-x: hidden;
+    color: white;
+}
+
+/* Aurora Background */
+body::before {
+    content: "";
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: radial-gradient(circle at 30% 30%, #667eea55, transparent 40%),
+                radial-gradient(circle at 70% 60%, #764ba255, transparent 40%),
+                radial-gradient(circle at 50% 80%, #6a11cb55, transparent 40%);
+    animation: auroraMove 20s linear infinite;
+    z-index: -1;
+}
+
+@keyframes auroraMove {
+    0%   { transform: rotate(0deg) scale(1); }
+    50%  { transform: rotate(180deg) scale(1.2); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 { margin: 5px 0; }
+
+.container {
+    max-width: 650px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    border-color: #667eea;
+    box-shadow: 0 0 25px rgba(102,126,234,0.4);
+    transform: translateY(-4px);
+}
+
+.title-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #d0d5dd;
+    background: #ffffff;
+    color: #111827;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 50px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #d0d5dd;
+    background: #ffffff;
+    color: #111827;
+    resize: vertical;
+}
+
+button {
+    margin-top: 8px;
+    padding: 7px 12px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(118,75,162,0.6);
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <small>© Imash Kavindu Dissanayake</small>
+    <h1>Amarasri Herath Notepad 📝</h1>
+</div>
+
+<div class="container" id="notesContainer"><div class="card">
+        <input type="text" class="title-input" id="title1" placeholder="Text Name / Identifier">
+
+        <textarea id="text1" placeholder="Write something..."></textarea>
+
+        <button onclick="generateAndCopy(&#39;text1&#39;)">
+            Generate &amp; Copy Code
+        </button>
+    </div><div class="card">
+        <input type="text" class="title-input" id="title2" placeholder="Text Name / Identifier">
+
+        <textarea id="text2" placeholder="Write something..."></textarea>
+
+        <button onclick="generateAndCopy(&#39;text2&#39;)">
+            Generate &amp; Copy Code
+        </button>
+    </div><div class="card">
+        <input type="text" class="title-input" id="title3" placeholder="Text Name / Identifier">
+
+        <textarea id="text3" placeholder="Write something..."></textarea>
+
+        <button onclick="generateAndCopy(&#39;text3&#39;)">
+            Generate &amp; Copy Code
+        </button>
+    </div><div class="card">
+        <input type="text" class="title-input" id="title4" placeholder="Text Name / Identifier">
+
+        <textarea id="text4" placeholder="Write something..."></textarea>
+
+        <button onclick="generateAndCopy(&#39;text4&#39;)">
+            Generate &amp; Copy Code
+        </button>
+    </div><div class="card">
+        <input type="text" class="title-input" id="title5" placeholder="Text Name / Identifier">
+
+        <textarea id="text5" placeholder="Write something..."></textarea>
+
+        <button onclick="generateAndCopy(&#39;text5&#39;)">
+            Generate &amp; Copy Code
+        </button>
+    </div><div class="card">
+        <input type="text" class="title-input" id="title6" placeholder="Text Name / Identifier">
+
+        <textarea id="text6" placeholder="Write something..."></textarea>
+
+        <button onclick="generateAndCopy(&#39;text6&#39;)">
+            Generate &amp; Copy Code
+        </button>
+    </div><div class="card">
+        <input type="text" class="title-input" id="title7" placeholder="Text Name / Identifier">
+
+        <textarea id="text7" placeholder="Write something..."></textarea>
+
+        <button onclick="generateAndCopy(&#39;text7&#39;)">
+            Generate &amp; Copy Code
+        </button>
+    </div><div class="card">
+        <input type="text" class="title-input" id="title8" placeholder="Text Name / Identifier">
+
+        <textarea id="text8" placeholder="Write something..."></textarea>
+
+        <button onclick="generateAndCopy(&#39;text8&#39;)">
+            Generate &amp; Copy Code
+        </button>
+    </div><div class="card">
+        <input type="text" class="title-input" id="title9" placeholder="Text Name / Identifier">
+
+        <textarea id="text9" placeholder="Write something..."></textarea>
+
+        <button onclick="generateAndCopy(&#39;text9&#39;)">
+            Generate &amp; Copy Code
+        </button>
+    </div><div class="card">
+        <input type="text" class="title-input" id="title10" placeholder="Text Name / Identifier">
+
+        <textarea id="text10" placeholder="Write something..."></textarea>
+
+        <button onclick="generateAndCopy(&#39;text10&#39;)">
+            Generate &amp; Copy Code
+        </button>
+    </div></div>
+
+<script>
+
+function saveData(id, value) {
+    localStorage.setItem(id, value);
+}
+
+function loadData(id) {
+    return localStorage.getItem(id) || "";
+}
+
+function generateAndCopy(textId) {
+
+    let textArea = document.getElementById(textId);
+    let originalText = textArea.value;
+
+    if(originalText.trim() === "") {
+        alert("Please enter text!");
+        return;
+    }
+
+    let registerCode = Math.floor(10000 + Math.random() * 90000);
+    let finalText = originalText + registerCode;
+
+    navigator.clipboard.writeText(finalText);
+
+    alert("Register Code Added & Copied!");
+}
+
+let container = document.getElementById("notesContainer");
+
+for(let i=1; i<=10; i++) {
+
+    let card = document.createElement("div");
+    card.className = "card";
+
+    card.innerHTML = `
+        <input type="text" 
+               class="title-input" 
+               id="title${i}" 
+               placeholder="Text Name / Identifier">
+
+        <textarea id="text${i}" 
+                  placeholder="Write something..."></textarea>
+
+        <button onclick="generateAndCopy('text${i}')">
+            Generate & Copy Code
+        </button>
+    `;
+
+    container.appendChild(card);
+
+    // Load saved data
+    document.getElementById(`title${i}`).value = loadData(`title${i}`);
+    document.getElementById(`text${i}`).value = loadData(`text${i}`);
+
+    // Auto save on typing
+    document.getElementById(`title${i}`).addEventListener("input", function() {
+        saveData(`title${i}`, this.value);
+    });
+
+    document.getElementById(`text${i}`).addEventListener("input", function() {
+        saveData(`text${i}`, this.value);
+    });
+}
+
+</script>
+
+
+</body></html>
